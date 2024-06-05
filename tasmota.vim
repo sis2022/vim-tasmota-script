@@ -3,7 +3,9 @@
 """ Maintainer:           Nils Radtke (nr) <vimsyn@success-in-software.com>
 """ Last Change:          2023-06-19
 
-""" TODO: args in parenthesis, identifiers in parenthesis and with math ops
+""" TODO: args in parenthesis
+"""       identifiers in parenthesis and with math ops
+"""       prevent <> from being interpreted as HTML comments
 
 " Prelude {{{1
 if exists("b:current_syntax")
@@ -102,9 +104,9 @@ hi tsmMathsOperator term=bold cterm=bold gui=bold
 
 " Comments {{{1
 syn keyword tsmTodo TODO FIXME XXX NOTE contained
-syn match tsmComment ";.*$" contains=tsmTodo
-syn match tsmComment ";.*$" contains=tsmTodo
-syn match tsmComment "\/\/.*"
+syn match tsmComment "^;.*$" contains=tsmTodo
+syn match tsmComment "^;.*$" contains=tsmTodo
+syn match tsmComment "^\/\/.*"
 
 " Postscript {{{1
 let b:current_syntax = 'tasmota'
