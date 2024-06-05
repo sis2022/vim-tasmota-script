@@ -8,5 +8,5 @@ filetype on
 if has("autocmd")
   au Syntax tasmota     runtime! syntax/tasmota.vim
   au BufRead,BufNewFile *.ts setfiletype tasmota
-endif¬
+endif
 '''
