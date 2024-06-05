@@ -10,3 +10,5 @@ if has("autocmd")
   au BufRead,BufNewFile *.ts setfiletype tasmota
 endif
 ```
+
+* License: GPLv2
