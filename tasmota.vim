@@ -1,4 +1,7 @@
 """ Vim syntax file
+""" Copyright 2023, 2024 N. Radtke
+""" License: GPLv2
+
 """ Language:             Tasmota Script
 """ Maintainer:           Nils Radtke (nr) <vimsyn@success-in-software.com>
 """ Last Change:          2023-06-19
